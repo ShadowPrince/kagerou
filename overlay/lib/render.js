@@ -179,6 +179,7 @@
           * 100
         ).toFixed(0)
       })
+      console.log(d.length)
     }
 
   }
