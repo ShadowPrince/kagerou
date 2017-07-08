@@ -180,7 +180,7 @@
         ).toFixed(0)
       })
 
-      console.log(data.header.encdps + " vs " + this.previous_dps)
+      console.log(data.header.encdps + " vs " + this.previous_dps + this.previous_dps == data.header.encdps)
       let result = this.previous_dps == data.header.encdps
       this.previous_dps = data.header.encdps
       return result

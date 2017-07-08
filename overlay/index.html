@@ -85,6 +85,7 @@ window.addEventListener('load', e => {
         window.renderer.updateHeader()
       }
       if (!window.renderer.update()) {
+        console.log('ret')
         document.body.style.display = ''
       }
 
