@@ -115,8 +115,6 @@
 
       var current_dps = window.hist.current.header.encdps
       var result = this.previous_dps != current_dps
-      console.log(current_dps + " vs " + this.previous_dps)
-      console.log(this.previous_dps == current_dps)
       this.previous_dps = current_dps
       return result
     }
