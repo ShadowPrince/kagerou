@@ -88,7 +88,7 @@ window.addEventListener('load', e => {
 
       document.body.style.display = ''
       if (previous_id != undefined) {
-        cancelTimeout(previous_id)
+        clearTimeout(previous_id)
       }
 
       previous_id = setTimeout(function () {
