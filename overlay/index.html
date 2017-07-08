@@ -84,9 +84,10 @@ window.addEventListener('load', e => {
         window.renderer = new Renderer(window.config.get())
         window.renderer.updateHeader()
       }
-      window.renderer.update()
+      if (!window.renderer.update()) {
+        document.body.style.display = ''
+      }
 
-      document.body.style.display = ''
       if (previous_id != undefined) {
         clearTimeout(previous_id)
       }
