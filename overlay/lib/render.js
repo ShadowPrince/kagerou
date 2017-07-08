@@ -179,9 +179,11 @@
           * 100
         ).toFixed(0)
       })
-      console.log(d)
-    }
 
+      let result = this.previous_dps == data.header.encdps
+      this.previous_dps = data.header.encdps
+      return result
+    }
   }
 
   class Row {
